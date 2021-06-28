@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> 6 Motor Control </title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(198, 255, 246);">
+    <iframe name="frame" id="frame" style="display: none;"></iframe>
+    <form id="form" action="index.php" method="POST" target="frame">
+
+
+        <h1>لوحة التحكم الرئيسية</h1>
+
+        <br>
+
+        <h3>محرك رقم (1)</h3>
+        <div class="Motor (1)">
+
+            <input type="range" min="0" max="180" value="90" id="Range1" class="slider" name="v1">
+            <p><b>value: <span id="value1"></span></b></p>
+
+        </div>
+
+        <br>
+
+        <h3>محرك رقم (2)</h3>
+        <div class="Motor (2)">
+
+            <input type="range" min="0" max="180" value="90" id="Range2" class="slider" name="v2">
+            <p>value: <span id="value2"></span> </p>
+
+        </div>
+
+        <br>
+
+        <h3>محرك رقم (3)</h3>
+        <div class="Motor (3)">
+
+            <input type="range" min="0" max="180" value="90" id="Range3" class="slider" name="v3">
+            <p>value: <span id="value3"></span> </p>
+
+        </div>
+
+        <br>
+
+        <h3>محرك رقم (4)</h3>
+        <div class="Motor (4)">
+
+            <input type="range" min="0" max="180" value="90" id="Range4" class="slider" name="v4">
+            <p>value: <span id="value4"></span> </p>
+
+        </div>
+
+        <br>
+
+        <h3>محرك رقم (5)</h3>
+        <div class="Motor (5)">
+
+            <input type="range" min="0" max="180" value="90" id="Range5" class="slider" name="v5">
+            <p>value: <span id="value5"></span> </p>
+
+        </div>
+
+        <br>
+
+        <h3>محرك رقم (6)</h3>
+        <div class="Motor (6)">
+
+            <input type="range" min="0" max="180" value="90" id="Range6" class="slider" name="v6">
+            <p>value: <span id="value6"></span> </p>
+
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn" style="font-size: 150%; background-color: darkcyan; color: rgb(255, 255, 255);">حفظ </button>
+        <button type="submit" class="btn" style="font-size: 150%; background-color: darkcyan; color: rgb(255, 255, 255);">تشغيل</button>
+    </form>
+</body>
+<script scr=“JavaScript.js”></script>
+
+</html>
